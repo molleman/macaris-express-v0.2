@@ -3,8 +3,8 @@ function load_content() {
 	$.get("/getdata", function(data) {
 		if(!isNaN(data)){
 			content_area.html('0'+data);
-			load_content();
 		}
+		load_content();
 	});
 }
 load_content();
