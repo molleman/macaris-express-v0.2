@@ -4,7 +4,8 @@ function load_content() {
 		if(!isNaN(data)){
 			content_area.html('0'+data);
 		}
-		load_content();
 	});
 }
-load_content();
+
+setInterval(load_content,1000);
+
