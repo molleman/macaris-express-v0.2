@@ -18,6 +18,7 @@ exports.getLikes = function (response) {
 
 function fetchLikes(){
 	graph.get("153299718040481", function(err, res) {
+		console.log("fetch likes +"+res['likes']);
 		likes = res['likes'];
 	    return res;
 	});
