@@ -4,7 +4,7 @@
  */
 
 //like gloabal
-likes;
+likes = undefined;
 
 var express = require('express');
 var routes = require('./routes');
